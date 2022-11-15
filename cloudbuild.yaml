@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'us-west2-docker.pkg.dev/exemplary-datum-362307/quickstart-docker-repo/51c299a9c321:v1', '.' ]
+  args: [ 'build', '-t', 'asia-northeast3-docker.pkg.dev/exemplary-datum-362307/fatclinic/fatclinic-was', '.' ]
 images:
-- 'us-west2-docker.pkg.dev/exemplary-datum-362307/quickstart-docker-repo/51c299a9c321:v1'
+- 'asia-northeast3-docker.pkg.dev/exemplary-datum-362307/fatclinic/fatclinic-was'
