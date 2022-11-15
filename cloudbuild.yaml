@@ -5,7 +5,6 @@ steps:
 images:
 - 'asia-northeast3-docker.pkg.dev/exemplary-datum-362307/fatclinic/fatclinic-was'
 
-# Deploy the workflow
 - id: 'deploy-workflow'
-  name: 'gcr.io/cloud-builders/gcloud'
+  name: 'gcr.io/cloud-builders/docker'
   args: ['workflows', 'deploy', 'eunsi-main', '--source', 'fatclinic/cloudbuild.yaml']
