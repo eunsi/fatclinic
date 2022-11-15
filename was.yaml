@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: fatclinic-container
-        image: us-west2-docker.pkg.dev/exemplary-datum-362307/quickstart-docker-repo/51c299a9c321:v1
+        image: asia-northeast3-docker.pkg.dev/exemplary-datum-362307/fatclinic/fatclinic-was
         ports:
         - containerPort: 8080
         resources:
