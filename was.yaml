@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fatclinic-was-deployment
+  labels:
+    app: fatclinic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fatclinic
+  template:
+    metadata:
+      labels:
+        app: fatclinic
+        tier: was
+    spec:
+      containers:
+      - name: fatclinic-container
+        image: asia.gcr.io/exemplary-datum-362307/fatclinic-was:v1
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 250Mi
+            cpu: 100m
