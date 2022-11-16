@@ -1,6 +1,5 @@
 FROM openjdk:11 AS fatclinic
-ADD fatclinic.tar /
-WORKDIR  /fatclinic 
+WORKDIR  /fatclinic/fatclinic
 RUN ./mvnw clean install
 
 FROM tomcat:9.0-jdk17
