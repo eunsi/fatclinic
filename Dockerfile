@@ -1,5 +1,5 @@
 FROM openjdk:11 AS fatclinic
-ADD fatclinic.tar / 
+ADD fatclinic.zip / 
 WORKDIR  /fatclinic 
 RUN ./mvnw clean install
 
